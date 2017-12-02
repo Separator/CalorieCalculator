@@ -1,0 +1,10 @@
+{
+  "project": "project",
+  "sender": "sender",
+  "apiKey": "apiKey",
+  "url": {
+    "send": "send",
+    "balance": "balance"
+  },
+  "phone": "77771112233"
+}
