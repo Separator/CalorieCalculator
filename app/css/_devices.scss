@@ -1,0 +1,156 @@
+@media screen and (max-width: 1200px) {
+    .large-container #calculator-module .step-input {
+        display: block;
+        text-align: center;
+    }
+
+    .large-container #calculator-module .step-input label {
+        display: block;
+        padding-right: 0;
+    }
+
+    .large-container #calculator-module .step-input input {
+        display: inline-block;
+        width: 90%;
+        margin-top: 5px;
+    }
+
+    .large-container #calculator-module .overall {
+        padding: 28px 28px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .large-container #calculator-module .step4 .step-btn {
+        height: 80px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .large-container #calculator-module .step-header {
+        padding: 28px 28px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .large-container #calculator-module .step-header {
+        padding: 28px 5px;
+    }
+
+    .large-container #calculator-module .step-name {
+        font-size: 20px;
+    }
+
+    .large-container #calculator-module .step4 .btn-block {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .large-container #calculator-module .step2 .btn-block {
+        width: 100%;
+    }
+
+    .large-container #calculator-module .overall .step-name {
+        padding-left: 10px;
+    }
+
+    .large-container #calculator-module .overall-result {
+        width: 150px;
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .large-container #calculator-module .main-text {
+        font-size: 16px;
+    }
+
+    .large-container #calculator-module .step-num {
+        font-size: 16px;
+    }
+
+    .large-container #calculator-module .step-name {
+        padding-left: 10px;
+        font-size: 16px;
+    }
+
+    .large-container #calculator-module .step-input input {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .large-container .calculator h2 {
+        line-height: 40px;
+    }
+
+    .large-container h1, .large-container h2 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .large-container #calculator-module .step1 .step-name {
+        padding-left: 12px;
+    }
+
+    .large-container #calculator-module .step1 .btn-block {
+        width: 100%;
+    }
+
+    .large-container #calculator-module .overall-result {
+        width: 100px;
+    }
+
+    .large-container #calculator-module .kkal-result {
+        font-size: 40px;
+        line-height: 40px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .large-container #calculator-module .step-btn {
+        border-radius: 25px;
+    }
+
+    .large-container #calculator-module .step-input input {
+        border-radius: 15px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .large-container h1, .large-container h2 {
+        font-size: 30px;
+    }
+
+    .large-container .subtext {
+        font-size: 16px;
+    }
+
+    .large-container #calculator-module .overall {
+        padding: 28px 5px;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .large-container #calculator-module .step3 .btn-block {
+        width: 100%;
+    }
+
+    .large-container #calculator-module .step-input {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .large-container,
+    .large-container #calculator-module .step-num,
+    .large-container #calculator-module .main-text,
+    .large-container #calculator-module .step-name,
+    .large-container #calculator-module .step-input label,
+    .large-container #calculator-module .step-input input {
+        font-size: 15px;
+    }
+}

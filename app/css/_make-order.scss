@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+@import "./_loader.scss";
+
+/* Всплывающее окно заказа */
+.calc-obscure-box {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  color: $mainColor;
+  font-family: $mainFontFamily;
+  background-color: rgba( 0, 0, 0, 0.5 );
+}
+
+.calc-light-box {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 80%;
+  max-width: 600px;
+  height: 80%;
+  max-height: 450px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 0;
+  border: 1px dashed silver;
+  box-shadow: 0 5px 15px rgba(0,0,0,.3);
+  background-color: #F5F5F5;
+}
+
+.calc-light-box .sub-page {
+  display: none;
+}
+
+.calc-light-box.form .sub-page:nth-child(1) {
+  display: block;
+}
+.calc-light-box.load .sub-page:nth-child(2),
+.calc-light-box.success .sub-page:nth-child(3),
+.calc-light-box.error .sub-page:nth-child(4) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.calc-light-box.success .sub-page:nth-child(3),
+.calc-light-box.error .sub-page:nth-child(4) {
+  flex-direction: column;
+}
+
+.calc-light-box h1 {
+  margin: 20px 0 0;
+  font-size: 35px;
+  text-align: left;
+}
+
+.calc-light-box h2 {
+  margin: 5px 0 0;
+  font-size: 20px;
+}
+
+.calc-light-box h3 {
+  margin: 5px 0 0;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.calc-light-box input {
+  display: inline-block;
+  min-width: 150px;
+  height: 35px;
+  border: 1px solid #dcdcdc;
+  outline: none;
+  border-radius: 21px;
+  padding: 7px 0;
+  margin: 15px auto;
+  font-size: 16px;
+  vertical-align: top;
+  text-align: center;
+}
+
+.calc-light-box #promocode-group {
+  padding: 15px 0 5px !important;
+  border-bottom: 1px solid #dbdbdb;
+  text-align: left;
+}
+
+.calc-light-box #promocode-group input {
+  width: calc( 100% - 40px );
+}
+
+.calc-light-box #call-me-group {
+  padding: 15px 0 5px !important;
+  text-align: center;
+}
+
+.calc-light-box #call-me-group h2,
+.calc-light-box #call-me-group h3 {
+  text-align: left;
+}
+
+.calc-light-box #call-me-group input {
+  width: 45%;
+}
+
+.calc-light-box .make-order,
+.calc-light-box .close {
+  box-sizing: content-box;
+  display: inline-block;
+  width: 45%;
+  min-width: 150px;
+  height: 33px;
+  margin: 15px 0 0 10px;
+  padding: 7px 0;
+  border: 1px solid #DCDCDC;
+  border-radius: 33px;
+  color: $bntRoundColor;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 33px;
+  background: $commonBackground;
+
+}

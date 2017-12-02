@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+@import "./themes/_protebya.scss";
+//@import "./themes/_raspisaniediet.scss";
+
+/* Основные стили */
+@import "./_main-styles.scss";
+
+/* Форма заказа */
+@import "./_make-order.scss";
+
+/* Стили для различных устройств */
+@import "./_devices.scss";

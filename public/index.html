@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./css/calculator.css" />
+    <script type="text/javascript" src="./js/jquery.js"></script>
+    <script type="text/javascript" src="./js/jquery.maskedinput.js"></script>
+    <script type="text/javascript" src="./js/calculator.js"></script>
+  </head>
+  <body>
+    <div class="large-container">
+            <div class="calculator">
+                <h2>Посчитайте вашу дневную норму калорий</h2>
+
+                <p class="subtext">
+                    Нормы потребления калорий рассчитываются по формуле, основанной на
+                    <br />
+                    показателях  веса, роста, возраста, помноженных на коэффициент активности.
+                </p>
+
+                <div class="formula-block">
+                    <div class="formula">
+                        <div class="formula-img">М</div>
+                        <p class="formula-male">( ( 9,99 х Вес ) + ( 6,25 х Рост ) - ( 4,92 х Возраст ) + 5 ) х Коэффициент активности = Мужская суточная норма калорий.</p>
+                    </div>
+                    <div class="formula">
+                        <div class="formula-img">Ж</div>
+                        <p class="formula-female">( ( 9,99 х Вес ) + ( 6,25 х Рост ) - ( 4,92 х Возраст ) - 161 ) х Коэффициент активности = Женская суточная норма калорий.</p>
+                    </div>
+                </div>
+
+                <div id="calculator-module">
+                    <div class="step step1 active" data-step="1">
+                        <div class="step-header top">
+                            <span class="step-num">Шаг 1.</span>
+                            <span class="step-name">Укажите пол</span>
+                        </div>
+                        <div class="step-body">
+                            <div class="btn-block">
+                                <div class="step-btn" data-step="1" data-value="male">
+                                    <span class="centerer"></span><span class="centered"><span class="main-text">Мужской</span></span>
+                                </div>
+                            </div>
+                            <div class="btn-block">
+                                <div class="step-btn" data-step="1" data-value="female">
+                                    <span class="centerer"></span><span class="centered"><span class="main-text">Женский</span></span>
+                                </div>
+                            </div>
+                            <div style="clear:both;"></div>
+                        </div>
+                    </div>
+                    <div class="step step2 hidden" data-step="2">
+                        <div class="step-header">
+                            <span class="step-num">Шаг 2.</span><span class="step-name">К каким результатам стремитесь</span>
+                        </div>
+                        <div class="step-body">
+                            <div class="btn-block">
+                                <div class="step-btn" data-step="2" data-value="-0.2">
+                                    <span class="centerer"></span><span class="centered"><span class="main-text">Похудение</span></span>
+                                </div>
+                            </div>
+                            <div class="btn-block">
+                                <div class="step-btn" data-step="2" data-value="0.1">
+                                    <span class="centerer"></span><span class="centered"><span class="main-text">Набор массы</span></span>
+                                </div>
+                            </div>
+                            <div class="btn-block">
+                                <div class="step-btn" data-step="2" data-value="0">
+                                    <span class="centerer"></span><span class="centered"><span class="main-text">Поддержание формы</span></span>
+                                </div>
+                            </div>
+                            <div style="clear:both;"></div>
+                        </div>
+                    </div>
+                    <div class="step step3 hidden" data-step="3">
+                        <div class="step-header">
+                            <span class="step-num">Шаг 3.</span>
+                            <span class="step-name">Ваши индивидуальные параметры</span>
+                        </div>
+                        <div class="step-body">
+                            <div class="btn-block">
+                                <div class="step-input">
+                                    <label for="age-input">Возраст:</label>
+                                    <input id="calc-age-input" type="number" min="10" max="100" data-step="3" />
+                                </div>
+                            </div>
+                            <div class="btn-block">
+                                <div class="step-input">
+                                    <label for="height-input">Рост:</label>
+                                    <input id="calc-height-input" type="number" min="130" max="230" data-step="3" />
+                                </div>
+                            </div>
+                            <div class="btn-block">
+                                <div class="step-input">
+                                    <label for="weight-input">Вес:</label>
+                                    <input id="calc-weight-input" type="number" min="30" max="200" data-step="3" />
+                                </div>
+                            </div>
+                            <div style="clear:both;"></div>
+                        </div>
+                    </div>
+                    <div class="step step4 hidden" data-step="4">
+                        <div class="step-header">
+                            <span class="step-num">Шаг 4.</span>
+                            <span class="step-name">Уровень активности</span>
+                        </div>
+                        <div class="step-body">
+                            <div class="btn-block">
+                                <div class="step-btn" data-step="4" data-value="1.20">
+                                    <span class="centerer"></span><span class="centered"><span class="main-text">Сидячий образ жизни</span></span>
+                                </div>
+                            </div>
+                            <div class="btn-block">
+                                <div class="step-btn" data-step="4" data-value="1.375">
+                                    <span class="centerer"></span><span class="centered"><span class="main-text">Средняя активность</span><br /><span class="sub-text">(легкие упражнения 1-3 раз в неделю)</span></span>
+                                </div>
+                            </div>
+                            <div class="btn-block">
+                                <div class="step-btn" data-step="4" data-value="1.4625">
+                                    <span class="centerer"></span><span class="centered"><span class="main-text">Повышенная активность</span><br /><span class="sub-text">(активные тренировки 3-5 раз в неделю)</span></span>
+                                </div>
+                            </div>
+                            <div class="btn-block">
+                                <div class="step-btn" data-step="4" data-value="1.550">
+                                    <span class="centerer"></span><span class="centered"><span class="main-text">Очень высокая активность</span><br /><span class="sub-text">(тяжелые физические нагрузки 6-7 раз в неделю)</span></span>
+                                </div>
+                            </div>
+                            <div class="btn-block">
+                                <div class="step-btn" data-step="4" data-value="1.6375">
+                                    <span class="centerer"></span><span class="centered"><span class="main-text">Экстремальная активность</span><br /><span class="sub-text">занятия интенсивным тренингом 2 раза в день</span></span>
+                                </div>
+                            </div>
+                            <div style="clear:both;"></div>
+                        </div>
+                    </div>
+                    <div class="overall step step5 hidden" data-step="5">
+                        <div class="step-num">Итог.</div>
+                        <div class="step-name">Ваша дневная<br />норма калорий:</div>
+                        <div class="overall-result">
+                            <div id="result-field" class="kkal-result">1555</div>
+                            <div class="kkal-result-text">ккал/день</div>
+                        </div>
+                        <div class="result-btns">
+                            <button id="calc-order-btn" class="round-btn orange filled">Заказать</button>
+                            <a href="#calculator-title" id="recalculate-btn">Сделать новый расчет</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+  </body>
+</html>

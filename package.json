@@ -1,0 +1,22 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "description": "calorie calculator",
+  "main": "public/calculator.js",
+  "scripts": {
+    "browsersync": "cd public && browser-sync start --server --files 'public/css/*.css, public/js/*.js'",
+    "sasswatch": "sass --watch app/css:public/css"
+  },
+  "author": "Separator",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1"
+  },
+  "dependencies": {
+    "curl": "^0.1.4",
+    "md5": "^2.2.1",
+    "sha1": "^1.1.1",
+    "ws": "^3.3.2"
+  }
+}

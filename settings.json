@@ -1,0 +1,10 @@
+{
+  "project": "smsSenderSecond",
+  "sender": "ideabody",
+  "apiKey": "34efbfcf98ccd",
+  "url": {
+    "send": "https://mainsms.ru/api/mainsms/message/send",
+    "balance": "https://mainsms.ru/api/mainsms/message/balance"
+  },
+  "phone": "79055501040"
+}
