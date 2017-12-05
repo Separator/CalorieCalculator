@@ -57,19 +57,25 @@
 .calc-light-box h1 {
   margin: 20px 0 0;
   font-size: 30px;
+  color: #333;
   text-align: left;
+  text-transform: none;
 }
 
 .calc-light-box h2 {
   margin: 5px 0 0;
+  color: #333;
   font-size: 20px;
+  text-transform: none;
 }
 
 .calc-light-box h3 {
   margin: 5px 0 0;
+  color: #333;
   font-size: 14px;
   font-weight: normal;
   font-style: italic;
+  text-transform: none;
 }
 
 .calc-light-box input {
@@ -104,6 +110,7 @@
 .calc-light-box #call-me-group h2,
 .calc-light-box #call-me-group h3 {
   text-align: left;
+  text-transform: none;
 }
 
 .calc-light-box #call-me-group input {

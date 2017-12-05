@@ -162,4 +162,5 @@ $( document ).ready(function() {
     } );
     $( document.body ).append( $obscureBox );
   } );
+  $( '.step-num + br', $obscureBox ).remove();
 });
