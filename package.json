@@ -4,7 +4,7 @@
   "description": "calorie calculator",
   "main": "public/calculator.js",
   "scripts": {
-    "browsersync": "cd public && browser-sync start --server --files 'public/css/*.css, public/js/*.js'",
+    "browsersync": "cd public && browser-sync start --server --files '**/*.*'",
     "sasswatch": "sass --watch app/css:public/css"
   },
   "author": "Separator",

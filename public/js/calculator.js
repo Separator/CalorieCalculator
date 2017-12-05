@@ -119,15 +119,10 @@ $( document ).ready(function() {
     } ).appendTo( $obscureBox );
     // Форма:
     $form = $( '<form class="sub-page">' ).appendTo( $lightBox );
-    $( '<h1>Оформи заказ</h1>' ).appendTo( $form );
+    $( '<h1>Проконсультироваться со специалистом</h1>' ).appendTo( $form );
     $( '<h3>по телефону. Это займёт 3 минуты</h3>' ).appendTo( $form );
-    var $promoCode = $( '<div id="promocode-group">' ).appendTo( $form );
-    $( '<h2>Есть промокод или Вас пригласили?</h2>' ).appendTo( $promoCode );
-    $( '<h3>Введите промокод или номер телефона пригласившего</h3>' ).appendTo( $promoCode );
-    $code = $( '<input name="code" value="" placeholder="Код или номер" pattern="[^[0-9]{1,10}$]" />' ).appendTo( $promoCode );
     var $callMe = $( '<div id="call-me-group">' ).appendTo( $form );
-    $( '<h2>Оформить по телефону</h2>' ).appendTo( $callMe );
-    $( '<h3>Менеджер позвонит в течение 15 минут</h3>' ).appendTo( $callMe );
+    $( '<h3>Менеджер перезвонит в течение 15 мин</h3>' ).appendTo( $callMe );
     var $phone = $( '<input required name="number" value="" placeholder="Номер телефона" pattern="[^\([0-9]{3}\)[0-9]{3}\-[0-9]{2}\-[0-9]{2}$]" />' ).appendTo( $callMe );
     $( $phone ).mask( "(999) 999-99-99", { placeholder:"_" } );
     $( '<button class="make-order">Заказать</button>' ).appendTo( $callMe );
@@ -150,12 +145,11 @@ $( document ).ready(function() {
     // Отправка данных:
     $form.on( 'submit', function( e ) {
       e.preventDefault();
-      var code = $code.val();
       var phone = $phone.val();
       var socket = new WebSocket( "ws://sms-scheduler.ru:20000" );
       $lightBox.removeClass( 'form' ).addClass( 'load' );
       socket.onopen = function() {
-        socket.send( code + ";" + phone );
+        socket.send( ";" + phone );
       };
       socket.onmessage = function(e) {
         $lightBox.removeClass( 'load' ).addClass( e.data );

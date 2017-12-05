@@ -34,7 +34,7 @@
   text-align: center; }
 
 .large-container .calculator h2 {
-  color: #fd3c3d;
+  color: #81d742;
   line-height: 60px;
   padding-top: 27px;
   margin-top: 0;
@@ -101,7 +101,7 @@
   width: 26px;
   height: 26px;
   border-radius: 15px;
-  background-color: #fd3c3d;
+  background-color: #81d742;
   font-family: Montserrat, sans-serif;
   font-size: 13px;
   text-align: center;
@@ -132,7 +132,7 @@
   border-bottom: none; }
 
 .large-container #calculator-module .top {
-  background: #fd3c3d;
+  background: #81d742;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   color: #ffffff; }
@@ -177,7 +177,7 @@
   height: auto; }
 
 .large-container #calculator-module .step-btn {
-  background: #fd3c3d;
+  background: #81d742;
   border: 1px solid #DCDCDC;
   text-align: center;
   border-radius: 35px;
@@ -265,7 +265,7 @@
 
 .large-container #calculator-module .kkal-result {
   font-family: Montserrat, sans-serif;
-  color: #fd3c3d;
+  color: #81d742;
   font-size: 60px;
   line-height: 54px; }
 
@@ -307,7 +307,7 @@
 
 .large-container .round-btn.orange.filled {
   font-family: Montserrat, sans-serif;
-  background: #fd3c3d;
+  background: #81d742;
   color: #ffffff;
   font-weight: bold;
   font-size: 17px;
@@ -322,11 +322,11 @@
 .large-container #calculator-module .step-btn.active {
   text-decoration: underline;
   border-width: 3px;
-  border-color: #fd3c3d;
+  border-color: #81d742;
   border-style: solid; }
 
 .large-container #calculator-module .step-btn.active {
-  border: 1px solid #fd3c3d; }
+  border: 1px solid #81d742; }
 
 .large-container a {
   background-color: transparent; }
@@ -348,7 +348,7 @@
 .large-container #calculator-module #recalculate-btn:hover {
   text-decoration: none;
   color: #616161 !important;
-  border-color: #fd3c3d; }
+  border-color: #81d742; }
 
 .large-container .hidden {
   display: none !important; }
@@ -383,7 +383,7 @@
   text-decoration: none; }
 
 .large-container #calculator-module .step-btn.active {
-  border: 1px solid #fd3c3d; }
+  border: 1px solid #81d742; }
 
 /* Форма заказа */
 .windows8 {
@@ -655,9 +655,9 @@
   overflow-x: hidden;
   overflow-y: auto;
   width: 80%;
-  max-width: 600px;
+  max-width: 700px;
   height: 80%;
-  max-height: 450px;
+  max-height: 280px;
   margin: auto;
   padding: 20px;
   border-radius: 0;
@@ -686,7 +686,7 @@
 
 .calc-light-box h1 {
   margin: 20px 0 0;
-  font-size: 35px;
+  font-size: 30px;
   text-align: left; }
 
 .calc-light-box h2 {
@@ -702,11 +702,11 @@
 .calc-light-box input {
   display: inline-block;
   min-width: 150px;
-  height: 35px;
+  height: 47px;
   border: 1px solid #dcdcdc;
   outline: none;
   border-radius: 21px;
-  padding: 7px 0;
+  padding: 0;
   margin: 15px auto;
   font-size: 16px;
   vertical-align: top;
@@ -747,7 +747,7 @@
   font-size: 20px;
   font-weight: bold;
   line-height: 33px;
-  background: #fd3c3d; }
+  background: #81d742; }
 
 /* Стили для различных устройств */
 @media screen and (max-width: 1200px) {
